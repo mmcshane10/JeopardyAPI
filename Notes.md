@@ -21,7 +21,7 @@ index += 1 is the final expression.
   - Mocha
   - Karma
 
-  --Which of the following are object-oriented languages.
+  --Which of the following are object-oriented languages. (multi choice)
 
   --JavaScript is single-threaded and non-blocking (multi choice)
 
@@ -32,3 +32,7 @@ index += 1 is the final expression.
   --What does REPL stand for? (multi choice)
 
   --Encapsulation/Abstractation questions (multi choice)
+
+  --Which is not part of C# Testing "Arrange, Act, Assert" (multi choice)
+
+  Categories: JavaScript, C#, Testing, General Knowledge, Potent Potables, Git/GitHub

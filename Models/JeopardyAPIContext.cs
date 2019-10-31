@@ -77,23 +77,43 @@ namespace JeopardyAPI.Models
 
                     new FillInTheBlank { FillInTheBlankId = 31, Category = "JavaScript", Difficulty = "Easy", Prompt = "_________ scoping means a variable can only be called in the block where it’s defined.", Answer = "lexical" },
 
-                    new FillInTheBlank { FillInTheBlankId = 32, Category = "JavaScript", Difficulty = "Medium", Prompt = "set_________() calls a piece of code multiple times, with a specific amount of time between each call.", Answer = "Interval" },
+                    new FillInTheBlank { FillInTheBlankId = 32, Category = "JavaScript", Difficulty = "Medium", Prompt = "set_________() calls a piece of code multiple times, with a specific amount of time between each call.", Answer = "interval" },
 
-                    new FillInTheBlank { FillInTheBlankId = 33, Category = "JavaScript", Difficulty = "Medium", Prompt = "set_________() calls a piece of code once, after a set duration of time.", Answer = "Timeout" },
+                    new FillInTheBlank { FillInTheBlankId = 33, Category = "JavaScript", Difficulty = "Medium", Prompt = "set_________() calls a piece of code once, after a set duration of time.", Answer = "timeout" },
 
-                    new FillInTheBlank { FillInTheBlankId = 34, Category = "JavaScript", Difficulty = "Easy", Prompt = "An _________ is a special code that gives us permission to request API data, and ties any requests we make in our application to an account we own", Answer = "API key" },
+                    new FillInTheBlank { FillInTheBlankId = 34, Category = "JavaScript", Difficulty = "Easy", Prompt = "An _________ is a special code that gives us permission to request API data, and ties any requests we make in our application to an account we own", Answer = "api key" },
 
-                    new FillInTheBlank { FillInTheBlankId = 35, Category = "JavaScript", Difficulty = "Medium", Prompt = "A _________ object is mostly a collection of nested key-value pairs, and is commonly used for transmitting data in web applications.", Answer = "JSON" },
+                    new FillInTheBlank { FillInTheBlankId = 35, Category = "JavaScript", Difficulty = "Medium", Prompt = "A _________ object is mostly a collection of nested key-value pairs, and is commonly used for transmitting data in web applications.", Answer = "json" },
 
-                    new FillInTheBlank { FillInTheBlankId = 36, Category = "C#", Difficulty = "Easy", Prompt = "_________ is a strictly-typed compiled language developed by Microsoft.", Answer = "C#" },
+                    new FillInTheBlank { FillInTheBlankId = 36, Category = "C#", Difficulty = "Easy", Prompt = "_________ is a strictly-typed compiled language developed by Microsoft.", Answer = "c#" },
 
-                    new FillInTheBlank { FillInTheBlankId = 37, Category = "C#", Difficulty = "Medium", Prompt = ".NET _________ is an open-source, light-weight version of the full .NET Framework.", Answer = "Core" },
+                    new FillInTheBlank { FillInTheBlankId = 37, Category = "C#", Difficulty = "Medium", Prompt = ".NET _________ is an open-source, light-weight version of the full .NET Framework.", Answer = "core" },
 
                     new FillInTheBlank { FillInTheBlankId = 38, Category = "C#", Difficulty = "Medium", Prompt = "A _________ is used to group interrelated and independent classes together. It is a keyword used to ID sets of classes. ", Answer = "namespace" },
 
                     new FillInTheBlank { FillInTheBlankId = 39, Category = "C#", Difficulty = "Medium", Prompt = "The keyword '_________' is called a directive. It tells C# that the code in this file will be implementing code that isn't contained in this file or in this file's namespace.", Answer = "using" },
 
-                    new FillInTheBlank { FillInTheBlankId = 40, Category = "C#", Difficulty = "Medium", Prompt = "_________ methods are methods that are called on the class itself, rather than an instance.", Answer = "static" }
+                    new FillInTheBlank { FillInTheBlankId = 40, Category = "C#", Difficulty = "Medium", Prompt = "_________ methods are methods that are called on the class itself, rather than an instance.", Answer = "static" },
+
+                    new FillInTheBlank { FillInTheBlankId = 41, Category = "General", Difficulty = "Easy", Prompt = "_________ is the process of restructuring existing code without changing its external behavior and with the purpose of improving its readability and reducing its complexity.", Answer = "refactoring" },
+
+                    new FillInTheBlank { FillInTheBlankId = 42, Category = "C#", Difficulty = "Medium", Prompt = "_________ is the act of turning one variable type into another variable type", Answer = "casting" },
+
+                    new FillInTheBlank { FillInTheBlankId = 43, Category = "Testing", Difficulty = "Hard", Prompt = "A _________ method is used to reset data between each test, ensuring one's test results aren't affected by earlier results.", Answer = "teardown" },
+
+                    new FillInTheBlank { FillInTheBlankId = 44, Category = "General", Difficulty = "Hard", Prompt = "_________ refers to the act of coding a program to handle exceptions in a manner that doesn't lead to the application crashing.", Answer = "exception handling" },
+
+                    new FillInTheBlank { FillInTheBlankId = 45, Category = "C#", Difficulty = "Hard", Prompt = "An _________ is a blueprint of things (such as declarations, properties and methods) that must be included within any class that utiliizes this.", Answer = "interface" }
+
+                    new FillInTheBlank { FillInTheBlankId = 46, Category = "C#", Difficulty = "Hard", Prompt = "An _________ class is never intended to be instantiated directly and are typically used to define a base class in the class heirarchy.", Answer = "abstract" },
+
+                    new FillInTheBlank { FillInTheBlankId = 47, Category = "C#", Difficulty = "Hard", Prompt = "When we define two or more constructors in a class, constructors that differ from the original are called _________ constructors.", Answer = "overloaded" },
+
+                    new FillInTheBlank { FillInTheBlankId = 48, Category = "General", Difficulty = "Medium", Prompt = "A _________ is usually a web browser, like Chrome or Firefox, but can be anything that facilitates interaction with the web.", Answer = "client" },
+
+                    new FillInTheBlank { FillInTheBlankId = 49, Category = "General", Difficulty = "Medium", Prompt = "A _________ is a machine that contains resources (like web pages and files) that can be requested by a client.", Answer = "server" },
+
+                    new FillInTheBlank { FillInTheBlankId = 50, Category = "General", Difficulty = "Medium", Prompt = "When a server receives a request from a client, it contructs and sends a _________ containing the resources necessary for that specific page.", Answer = "response" }
 
                     
             );
