@@ -103,7 +103,7 @@ namespace JeopardyAPI.Models
 
                     new FillInTheBlank { FillInTheBlankId = 44, Category = "General", Difficulty = "Hard", Prompt = "_________ refers to the act of coding a program to handle exceptions in a manner that doesn't lead to the application crashing.", Answer = "exception handling" },
 
-                    new FillInTheBlank { FillInTheBlankId = 45, Category = "C#", Difficulty = "Hard", Prompt = "An _________ is a blueprint of things (such as declarations, properties and methods) that must be included within any class that utiliizes this.", Answer = "interface" }
+                    new FillInTheBlank { FillInTheBlankId = 45, Category = "C#", Difficulty = "Hard", Prompt = "An _________ is a blueprint of things (such as declarations, properties and methods) that must be included within any class that utiliizes this.", Answer = "interface" },
 
                     new FillInTheBlank { FillInTheBlankId = 46, Category = "C#", Difficulty = "Hard", Prompt = "An _________ class is never intended to be instantiated directly and are typically used to define a base class in the class heirarchy.", Answer = "abstract" },
 
