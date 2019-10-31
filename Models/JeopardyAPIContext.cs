@@ -50,6 +50,38 @@ namespace JeopardyAPI.Models
                     new FillInTheBlank { FillInTheBlankId = 17, Category = "JavaScript", Difficulty = "Easy", Prompt = "What does BDD stand for?", Answer = "Behavior Driven Development" },
 
                     new FillInTheBlank { FillInTheBlankId = 18, Category = "JavaScript", Difficulty = "Easy", Prompt = "What does TDD stand for?", Answer = "Test Driven Development" },
+
+                    new FillInTheBlank { FillInTheBlankId = 19, Category = "JavaScript", Difficulty = "Medium", Prompt = "A _________ is a function that can be invoked using the new keyword to create new objects.", Answer = "constructor" },
+
+                    new FillInTheBlank { FillInTheBlankId = 20, Category = "JavaScript", Difficulty = "Medium", Prompt = "JavaScript employs _________, which are just objects from which other objects inherit methods.", Answer = "prototypes" },
+
+                    new FillInTheBlank { FillInTheBlankId = 21, Category = "JavaScript", Difficulty = "Easy", Prompt = "NPM is used to add open-source JavaScript libraries to your application. What does it stand for?", Answer = "node package manager" },
+
+                    new FillInTheBlank { FillInTheBlankId = 22, Category = "JavaScript", Difficulty = "Medium", Prompt = "In webpack, the Main.js file is an example of this, the 'door leading into our application'.", Answer = "entry point" },
+
+                    new FillInTheBlank { FillInTheBlankId = 23, Category = "JavaScript", Difficulty = "Easy", Prompt = "The BDD workflow is known as red, green, _________", Answer = "refactor" },
+
+                    new FillInTheBlank { FillInTheBlankId = 24, Category = "JavaScript", Difficulty = "Easy", Prompt = "We should use _________ when we want to declare a variable that does not change.", Answer = "const" },
+
+                    new FillInTheBlank { FillInTheBlankId = 25, Category = "JavaScript", Difficulty = "Easy", Prompt = "You create this file so that it isn't trackable by Github. ", Answer = "gitignore" },
+
+                    new FillInTheBlank { FillInTheBlankId = 26, Category = "JavaScript", Difficulty = "Easy", Prompt = "What is the official name for Javascript?", Answer = "ECMAscript" },
+
+                    new FillInTheBlank { FillInTheBlankId = 27, Category = "JavaScript", Difficulty = "Medium", Prompt = "_________ inheritance simply means that one class inherits from another class.", Answer = "classical" },
+
+                    new FillInTheBlank { FillInTheBlankId = 28, Category = "JavaScript", Difficulty = "Medium", Prompt = "With _________ inheritance, objects inherit from other objects.", Answer = "prototypal" },
+
+                    new FillInTheBlank { FillInTheBlankId = 29, Category = "JavaScript", Difficulty = "Medium", Prompt = "_________ is a term developers use for added functionality in a programming language that makes it easier to write and read.", Answer = "syntactic sugar" },
+
+                    new FillInTheBlank { FillInTheBlankId = 30, Category = "JavaScript", Difficulty = "Easy", Prompt = "We should use _________ when we want to declare a variable that changes.", Answer = "let" },
+
+                    new FillInTheBlank { FillInTheBlankId = 31, Category = "JavaScript", Difficulty = "Easy", Prompt = "_________ scoping means a variable can only be called in the block where it’s defined.", Answer = "lexical" },
+
+                    new FillInTheBlank { FillInTheBlankId = 32, Category = "JavaScript", Difficulty = "Medium", Prompt = "set_________() calls a piece of code multiple times, with a specific amount of time between each call.", Answer = "Interval" },
+
+                    new FillInTheBlank { FillInTheBlankId = 33, Category = "JavaScript", Difficulty = "Medium", Prompt = "set_________() calls a piece of code once, after a set duration of time.", Answer = "Timeout" },
+
+                    new FillInTheBlank { FillInTheBlankId = 34, Category = "JavaScript", Difficulty = "Easy", Prompt = "This is a special code that gives us permission to request API data, and ties any requests we make in our application to an account we own", Answer = "key" },
             );
         }
     }
