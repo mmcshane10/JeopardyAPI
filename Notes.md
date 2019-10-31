@@ -26,3 +26,9 @@ index += 1 is the final expression.
   --JavaScript is single-threaded and non-blocking (multi choice)
 
   --What does AJAX stand for (multi choice)
+
+  --Which one of these is not a state of a Promise (multi choice)
+
+  --What does REPL stand for? (multi choice)
+
+  --Encapsulation/Abstractation questions (multi choice)

@@ -81,7 +81,21 @@ namespace JeopardyAPI.Models
 
                     new FillInTheBlank { FillInTheBlankId = 33, Category = "JavaScript", Difficulty = "Medium", Prompt = "set_________() calls a piece of code once, after a set duration of time.", Answer = "Timeout" },
 
-                    new FillInTheBlank { FillInTheBlankId = 34, Category = "JavaScript", Difficulty = "Easy", Prompt = "This is a special code that gives us permission to request API data, and ties any requests we make in our application to an account we own", Answer = "key" },
+                    new FillInTheBlank { FillInTheBlankId = 34, Category = "JavaScript", Difficulty = "Easy", Prompt = "An _________ is a special code that gives us permission to request API data, and ties any requests we make in our application to an account we own", Answer = "API key" },
+
+                    new FillInTheBlank { FillInTheBlankId = 35, Category = "JavaScript", Difficulty = "Medium", Prompt = "A _________ object is mostly a collection of nested key-value pairs, and is commonly used for transmitting data in web applications.", Answer = "JSON" },
+
+                    new FillInTheBlank { FillInTheBlankId = 36, Category = "C#", Difficulty = "Easy", Prompt = "_________ is a strictly-typed compiled language developed by Microsoft.", Answer = "C#" },
+
+                    new FillInTheBlank { FillInTheBlankId = 37, Category = "C#", Difficulty = "Medium", Prompt = ".NET _________ is an open-source, light-weight version of the full .NET Framework.", Answer = "Core" },
+
+                    new FillInTheBlank { FillInTheBlankId = 38, Category = "C#", Difficulty = "Medium", Prompt = "A _________ is used to group interrelated and independent classes together. It is a keyword used to ID sets of classes. ", Answer = "namespace" },
+
+                    new FillInTheBlank { FillInTheBlankId = 39, Category = "C#", Difficulty = "Medium", Prompt = "The keyword '_________' is called a directive. It tells C# that the code in this file will be implementing code that isn't contained in this file or in this file's namespace.", Answer = "using" },
+
+                    new FillInTheBlank { FillInTheBlankId = 40, Category = "C#", Difficulty = "Medium", Prompt = "_________ methods are methods that are called on the class itself, rather than an instance.", Answer = "static" }
+
+                    
             );
         }
     }
