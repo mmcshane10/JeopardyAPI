@@ -10,9 +10,34 @@ namespace JeopardyAPI.Models
         }
 
         public DbSet<FillInTheBlank> FillInTheBlank { get; set; }
+        public DbSet<MultipleChoice> MultipleChoice { get; set; }
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
+
+            builder.Entity<MultipleChoice>()
+                .HasData(
+                    new MultipleChoice { MultipleChoiceId = 0, Category = "", Difficulty = "", Prompt = "", Answer = "", Wrong1 = "", Wrong2 = "", Wrong3 = ""},
+
+                    new MultipleChoice { MultipleChoiceId = 1, Category = "C#", Difficulty = "Hard", Prompt = "Dotnet script is a REPL tool. What does REPL stand for?", Answer = "read-evaluate-print-loop", Wrong1 = "refactor-exchange-print-loop", Wrong2 = "refactor-evaluate-print-locate", Wrong3 = "read-exchange-print-locate" },
+
+                    new MultipleChoice { MultipleChoiceId = 2, Category = "General", Difficulty = "Hard", Prompt = "When retrieving API data, we use something called AJAX to make our web requests. What does AJAX stand for?", Answer = "Asynchronous JavaScript And XML", Wrong1 = "Asynchronous JSON And XML", Wrong2 = "Application JSON And XML", Wrong3 = "Application JavaScript And XML" },
+
+                    new MultipleChoice { MultipleChoiceId = 3, Category = "JavaScript", Difficulty = "Hard", Prompt = "The JavaScript language is considered:", Answer = "Single-threaded and non-blocking", Wrong1 = "Single-threaded and blocking", Wrong2 = "Multi-threaded and non-blocking", Wrong3 = "Multi-threaded and blocking" },
+
+                    new MultipleChoice { MultipleChoiceId = 4, Category = "JavaScript", Difficulty = "Medium", Prompt = "A promise can have three states. Which one of the following is NOT one of those?", Answer = "Completed", Wrong1 = "Pending", Wrong2 = "Fulfilled", Wrong3 = "Rejected" },
+
+                    new MultipleChoice { MultipleChoiceId = 5, Category = "C#", Difficulty = "Medium", Prompt = "To help keep organized, we break down individual tests into three sections. Which one of the following is NOT one of those?", Answer = "Associate", Wrong1 = "Act", Wrong2 = "Assert", Wrong3 = "Arrange" },
+
+                    new MultipleChoice { MultipleChoiceId = 6, Category = "Testing", Difficulty = "Easy", Prompt = "Which of the following is step one of the BDD process when testing code?", Answer = "Identify the simplest possible behavior of the program.", Wrong1 = "Check if code can be refactored.", Wrong2 = "Implement the behavior with the least amount of code possible.", Wrong3 = "Write a coded test." },
+
+                    new MultipleChoice { MultipleChoiceId = 7, Category = "General", Difficulty = "Medium", Prompt = "The idea of bundling attributes and methods that work on that data within one unit (i.e. a class in JavaScript or C#) is called what?", Answer = "Encapsulation", Wrong1 = "Abstraction", Wrong2 = "Modularization", Wrong3 = "Privatizing" },
+
+                    new MultipleChoice { MultipleChoiceId = 8, Category = "General", Difficulty = "Medium", Prompt = "One of the key concepts of object-oriented programming languages is this, the act of reducing complexity by hiding unnecessary details from the user.", Answer = "Abstraction", Wrong1 = "Encapsulation", Wrong2 = "Modularization", Wrong3 = "Obscuration" },
+
+
+                );
+
             builder.Entity<FillInTheBlank>()
                 .HasData(
                     new FillInTheBlank { FillInTheBlankId = 1, Category = "General", Difficulty = "Easy", Prompt = "+, -, *, /, and % are called _________. They are special characters that indicate an action to be performed.", Answer = "operators" },
@@ -125,7 +150,17 @@ namespace JeopardyAPI.Models
 
                     new FillInTheBlank { FillInTheBlankId = 55, Category = "C#", Difficulty = "Easy", Prompt = "Anytime we update a ._________ file, we need to run dotnet restore to download and install updated packages.", Answer = "csproj" },
 
-                    new FillInTheBlank { FillInTheBlankId = 56, Category = "Testing", Difficulty = "Hard", Prompt = "We can manually add code to tell our application how to handle exceptions by using _________/_________ blocks.", Answer = "try/catch" }
+                    new FillInTheBlank { FillInTheBlankId = 56, Category = "Testing", Difficulty = "Hard", Prompt = "We can manually add code to tell our application how to handle exceptions by using _________/_________ blocks.", Answer = "try/catch" },
+
+                    new FillInTheBlank { FillInTheBlankId = 57, Category = "Testing", Difficulty = "Hard", Prompt = "We can manually add code to tell our application how to handle exceptions by using _________/_________ blocks.", Answer = "try/catch" },
+
+                    new FillInTheBlank { FillInTheBlankId = 58, Category = "C#", Difficulty = "Easy", Prompt = "In the MVC framework, a _________ represents the application's data.", Answer = "model" },
+
+                    new FillInTheBlank { FillInTheBlankId = 59, Category = "C#", Difficulty = "Easy", Prompt = "In the MVC framework, a _________ represents the user interface of the application.", Answer = "view" },
+
+                    new FillInTheBlank { FillInTheBlankId = 60, Category = "C#", Difficulty = "Medium", Prompt = "In the MVC framework, a _________ acts as the bridge between the data and the user interface.", Answer = "controller" },
+
+                    new FillInTheBlank { FillInTheBlankId = 61, Category = "C#", Difficulty = "Medium", Prompt = "The _________ templating engine allows us to add C# logic to our views using models we created.", Answer = "razor" }
             );
         }
     }

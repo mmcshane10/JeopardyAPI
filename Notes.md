@@ -21,22 +21,5 @@ index += 1 is the final expression.
   - Mocha
   - Karma
 
-  --Which of the following are object-oriented languages. (multi choice)
-
-  --JavaScript is single-threaded and non-blocking (multi choice)
-
-  --What does AJAX stand for (multi choice)
-
-  --Which one of these is not a state of a Promise (multi choice)
-
-  --What does REPL stand for? (multi choice)
-
-  --Encapsulation/Abstractation questions (multi choice)
-
-  --Which is not part of C# Testing "Arrange, Act, Assert" (multi choice)
-
   --pascalcase camelcase
-
-  --what is the first step in the BDD workflow (multi choice)
-
   Categories: JavaScript, C#, Testing, General Knowledge, Potent Potables, Git/GitHub
