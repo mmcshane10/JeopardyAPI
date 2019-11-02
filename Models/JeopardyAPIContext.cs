@@ -15,17 +15,17 @@ namespace JeopardyAPI.Models
         {
             builder.Entity<FillInTheBlank>()
                 .HasData(
-                    new FillInTheBlank { FillInTheBlankId = 1, Category = "JavaScript", Difficulty = "Easy", Prompt = "+, -, *, /, and % are called _________. They are special characters that indicate an action to be performed.", Answer = "operators" },
+                    new FillInTheBlank { FillInTheBlankId = 1, Category = "General", Difficulty = "Easy", Prompt = "+, -, *, /, and % are called _________. They are special characters that indicate an action to be performed.", Answer = "operators" },
 
-                    new FillInTheBlank { FillInTheBlankId = 2, Category = "JavaScript", Difficulty = "Easy", Prompt = "9 % 2; returns the remainder of 9 divided by 2. % is called _________.", Answer = "modulo" },
+                    new FillInTheBlank { FillInTheBlankId = 2, Category = "General", Difficulty = "Easy", Prompt = "9 % 2; returns the remainder of 9 divided by 2. % is called _________.", Answer = "modulo" },
 
                     new FillInTheBlank { FillInTheBlankId = 3, Category = "JavaScript", Difficulty = "Easy", Prompt = "Some methods take one or more _________ that provide the method with additional information to help it perform its action.", Answer = "arguments" },
 
-                    new FillInTheBlank { FillInTheBlankId = 4, Category = "JavaScript", Difficulty = "Easy", Prompt = "The _________ is your browser's interpretation of the HTML it reads.", Answer = "DOM" },
+                    new FillInTheBlank { FillInTheBlankId = 4, Category = "General", Difficulty = "Easy", Prompt = "The _________ is your browser's interpretation of the HTML it reads.", Answer = "DOM" },
 
-                    new FillInTheBlank { FillInTheBlankId = 5, Category = "JavaScript", Difficulty = "Easy", Prompt = "The variable scope of _________ which are declared outside of a function, allowing all functions the ability to access and use them.", Answer = "global variables" },
+                    new FillInTheBlank { FillInTheBlankId = 5, Category = "JavaScript", Difficulty = "Easy", Prompt = "Variables declared outside of functions have _________ scope which means that all code and functions can access them.", Answer = "global" },
 
-                    new FillInTheBlank { FillInTheBlankId = 6, Category = "JavaScript", Difficulty = "Easy", Prompt = "Variables with _________ only exist and are available during the execution of the function in which they are defined.", Answer = "local scope" },
+                    new FillInTheBlank { FillInTheBlankId = 6, Category = "JavaScript", Difficulty = "Easy", Prompt = "Variables with _________ scope only exist and are available during the execution of the function in which they are defined.", Answer = "local" },
 
                     new FillInTheBlank { FillInTheBlankId = 7, Category = "JavaScript", Difficulty = "Easy", Prompt = "_________ logic handles calculations and manipulation of data 'behind the scenes'.", Answer = "business" },
 
@@ -35,23 +35,23 @@ namespace JeopardyAPI.Models
 
                     new FillInTheBlank { FillInTheBlankId = 10, Category = "JavaScript", Difficulty = "Easy", Prompt = "A boolean, integer, and string are a few of types of _________ data types", Answer = "primitive" },
 
-                    new FillInTheBlank { FillInTheBlankId = 11, Category = "JavaScript", Difficulty = "Easy", Prompt = "Empty strings, the number 0, the number NaN, undefined, null, and false itself are _________", Answer = "falsey" },
+                    new FillInTheBlank { FillInTheBlankId = 11, Category = "JavaScript", Difficulty = "Easy", Prompt = "Empty strings, the number 0, NaN, undefined, null, and false itself are all types of _________ values", Answer = "falsey" },
 
                     new FillInTheBlank { FillInTheBlankId = 12, Category = "JavaScript", Difficulty = "Easy", Prompt = "_________ allows JavaScript to repeat an action until some condition is met.", Answer = "Looping" },
 
-                    new FillInTheBlank { FillInTheBlankId = 13, Category = "JavaScript", Difficulty = "Easy", Prompt = "DRY stands for _________ and refers to code that is well-refactored and efficient, instead of redundant. DRY code has many benefits, including being easier for other developers to pick up, being easier to maintain and update, and easier to debug when issues occur.", Answer = "don't repeat yourself" },
+                    new FillInTheBlank { FillInTheBlankId = 13, Category = "General", Difficulty = "Easy", Prompt = "DRY stands for _________ and refers to code that is well-refactored and efficient, instead of redundant. DRY code has many benefits, including being easier to maintain and update, and easier to debug when issues occur.", Answer = "don't repeat yourself" },
 
-                    new FillInTheBlank { FillInTheBlankId = 14, Category = "JavaScript", Difficulty = "Medium", Prompt = "_________ creates a new array with the results of calling the provided function on every element of the original array.", Answer = "array mapping" },
+                    new FillInTheBlank { FillInTheBlankId = 14, Category = "JavaScript", Difficulty = "Medium", Prompt = "Array _________ creates a new array with the results of calling the provided function on every element of the original array.", Answer = "mapping" },
 
-                    new FillInTheBlank { FillInTheBlankId = 15, Category = "JavaScript", Difficulty = "Easy", Prompt = "An _________ initializes a variable with the denoted value.", Answer = "initialization parameter" },
+                    new FillInTheBlank { FillInTheBlankId = 15, Category = "JavaScript", Difficulty = "Easy", Prompt = "", Answer = "" },
 
-                    new FillInTheBlank { FillInTheBlankId = 16, Category = "JavaScript", Difficulty = "Easy", Prompt = "In Behavior-Driven Development, _________ are examples of small, isolated behaviors a program should demonstrate, including input and output examples.", Answer = "specs" },
+                    new FillInTheBlank { FillInTheBlankId = 16, Category = "Testing", Difficulty = "Easy", Prompt = "In Behavior-Driven Development, _________ are examples of small, isolated behaviors a program should demonstrate, including input and output examples.", Answer = "specs" },
 
-                    new FillInTheBlank { FillInTheBlankId = 17, Category = "JavaScript", Difficulty = "Easy", Prompt = "What does BDD stand for?", Answer = "Behavior Driven Development" },
+                    new FillInTheBlank { FillInTheBlankId = 17, Category = "Testing", Difficulty = "Easy", Prompt = "What does BDD stand for?", Answer = "Behavior Driven Development" },
 
-                    new FillInTheBlank { FillInTheBlankId = 18, Category = "JavaScript", Difficulty = "Easy", Prompt = "What does TDD stand for?", Answer = "Test Driven Development" },
+                    new FillInTheBlank { FillInTheBlankId = 18, Category = "Testing", Difficulty = "Easy", Prompt = "What does TDD stand for?", Answer = "Test Driven Development" },
 
-                    new FillInTheBlank { FillInTheBlankId = 19, Category = "JavaScript", Difficulty = "Medium", Prompt = "A _________ is a function that can be invoked using the new keyword to create new objects.", Answer = "constructor" },
+                    new FillInTheBlank { FillInTheBlankId = 19, Category = "JavaScript", Difficulty = "Medium", Prompt = "A _________ is a function that can be invoked using the 'new' keyword to create new objects.", Answer = "constructor" },
 
                     new FillInTheBlank { FillInTheBlankId = 20, Category = "JavaScript", Difficulty = "Medium", Prompt = "JavaScript employs _________, which are just objects from which other objects inherit methods.", Answer = "prototypes" },
 
@@ -59,11 +59,11 @@ namespace JeopardyAPI.Models
 
                     new FillInTheBlank { FillInTheBlankId = 22, Category = "JavaScript", Difficulty = "Medium", Prompt = "In webpack, the Main.js file is an example of this, the 'door leading into our application'.", Answer = "entry point" },
 
-                    new FillInTheBlank { FillInTheBlankId = 23, Category = "JavaScript", Difficulty = "Easy", Prompt = "The BDD workflow is known as red, green, _________", Answer = "refactor" },
+                    new FillInTheBlank { FillInTheBlankId = 23, Category = "Testing", Difficulty = "Easy", Prompt = "The BDD workflow is known as red, green, _________", Answer = "refactor" },
 
                     new FillInTheBlank { FillInTheBlankId = 24, Category = "JavaScript", Difficulty = "Easy", Prompt = "We should use _________ when we want to declare a variable that does not change.", Answer = "const" },
 
-                    new FillInTheBlank { FillInTheBlankId = 25, Category = "JavaScript", Difficulty = "Easy", Prompt = "You create this file so that it isn't trackable by Github. ", Answer = "gitignore" },
+                    new FillInTheBlank { FillInTheBlankId = 25, Category = "Git", Difficulty = "Easy", Prompt = "You create this file so that it isn't trackable by Github. ", Answer = "gitignore" },
 
                     new FillInTheBlank { FillInTheBlankId = 26, Category = "JavaScript", Difficulty = "Easy", Prompt = "What is the official name for Javascript?", Answer = "ECMAscript" },
 
@@ -113,9 +113,19 @@ namespace JeopardyAPI.Models
 
                     new FillInTheBlank { FillInTheBlankId = 49, Category = "General", Difficulty = "Medium", Prompt = "A _________ is a machine that contains resources (like web pages and files) that can be requested by a client.", Answer = "server" },
 
-                    new FillInTheBlank { FillInTheBlankId = 50, Category = "General", Difficulty = "Medium", Prompt = "When a server receives a request from a client, it contructs and sends a _________ containing the resources necessary for that specific page.", Answer = "response" }
+                    new FillInTheBlank { FillInTheBlankId = 50, Category = "General", Difficulty = "Medium", Prompt = "When a server receives a request from a client, it contructs and sends a _________ containing the resources necessary for that specific page.", Answer = "response" },
 
-                    
+                    new FillInTheBlank { FillInTheBlankId = 51, Category = "C#", Difficulty = "Hard", Prompt = "Allowing a class to have total control over its own fields, preventing other classes from accessing and altering fields, and making code more maintainable are all benefits of _________.", Answer = "encapsulation" },
+
+                    new FillInTheBlank { FillInTheBlankId = 52, Category = "C#", Difficulty = "Medium", Prompt = "A _________ is a member of a class that provides a flexible mechanism to read, write, or compute the value of a private field.", Answer = "property" },
+
+                    new FillInTheBlank { FillInTheBlankId = 53, Category = "C#", Difficulty = "Medium", Prompt = "In object-oriented programming, _________ is the process of hiding and encapsulating complex code so that it's easier to use.", Answer = "abstraction" },
+
+                    new FillInTheBlank { FillInTheBlankId = 54, Category = "Testing", Difficulty = "Hard", Prompt = "Good testing should cover not just expected inputs but also _________, which are extreme or unusual parameters passed into a method.", Answer = "edge cases" },
+
+                    new FillInTheBlank { FillInTheBlankId = 55, Category = "C#", Difficulty = "Easy", Prompt = "Anytime we update a ._________ file, we need to run dotnet restore to download and install updated packages.", Answer = "csproj" },
+
+                    new FillInTheBlank { FillInTheBlankId = 56, Category = "Testing", Difficulty = "Hard", Prompt = "We can manually add code to tell our application how to handle exceptions by using _________/_________ blocks.", Answer = "try/catch" }
             );
         }
     }
