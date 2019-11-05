@@ -7,11 +7,11 @@ namespace JeopardyAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class FillInTheBlankontroller : ControllerBase
+    public class FillInTheBlankController : ControllerBase
     {
         private JeopardyAPIContext _db;
 
-        public FillInTheBlankontroller(JeopardyAPIContext db)
+        public FillInTheBlankController(JeopardyAPIContext db)
         {
             _db = db;
         }
