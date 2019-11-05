@@ -1,4 +1,5 @@
 ﻿using JeopardyAPI.Models;
+using System;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
@@ -20,9 +21,15 @@ namespace JeopardyAPI
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<JeopardyAPIContext>(opt =>
-                opt.UseMySql(Configuration.GetConnectionString("DefaultConnection")));
-            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+            if (Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT") == "Production")
+                services.AddDbContext<JeopardyAPIContext>(options =>
+                        options.UseSqlServer(Configuration.GetConnectionString("MyDbConnection")));
+            else            
+                services.AddDbContext<JeopardyAPIContext>(opt =>
+                    opt.UseMySql(Configuration.GetConnectionString("DefaultConnection")));
+                services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+
+                services.BuildServiceProvider().GetService<JeopardyAPIContext>().Database.Migrate();
 
             services.AddSwaggerDocument();
         }

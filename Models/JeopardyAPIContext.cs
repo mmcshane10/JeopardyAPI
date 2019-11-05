@@ -17,7 +17,7 @@ namespace JeopardyAPI.Models
 
             builder.Entity<MultipleChoice>()
                 .HasData(
-                    new MultipleChoice { MultipleChoiceId = 0, Category = "", Difficulty = "", Prompt = "", Answer = "", Wrong1 = "", Wrong2 = "", Wrong3 = ""},
+                    new MultipleChoice { MultipleChoiceId = 9, Category = "", Difficulty = "", Prompt = "", Answer = "", Wrong1 = "", Wrong2 = "", Wrong3 = ""},
 
                     new MultipleChoice { MultipleChoiceId = 1, Category = "C#", Difficulty = "Hard", Prompt = "Dotnet script is a REPL tool. What does REPL stand for?", Answer = "read-evaluate-print-loop", Wrong1 = "refactor-exchange-print-loop", Wrong2 = "refactor-evaluate-print-locate", Wrong3 = "read-exchange-print-locate" },
 
@@ -33,9 +33,7 @@ namespace JeopardyAPI.Models
 
                     new MultipleChoice { MultipleChoiceId = 7, Category = "General", Difficulty = "Medium", Prompt = "The idea of bundling attributes and methods that work on that data within one unit (i.e. a class in JavaScript or C#) is called what?", Answer = "Encapsulation", Wrong1 = "Abstraction", Wrong2 = "Modularization", Wrong3 = "Privatizing" },
 
-                    new MultipleChoice { MultipleChoiceId = 8, Category = "General", Difficulty = "Medium", Prompt = "One of the key concepts of object-oriented programming languages is this, the act of reducing complexity by hiding unnecessary details from the user.", Answer = "Abstraction", Wrong1 = "Encapsulation", Wrong2 = "Modularization", Wrong3 = "Obscuration" },
-
-
+                    new MultipleChoice { MultipleChoiceId = 8, Category = "General", Difficulty = "Medium", Prompt = "One of the key concepts of object-oriented programming languages is this, the act of reducing complexity by hiding unnecessary details from the user.", Answer = "Abstraction", Wrong1 = "Encapsulation", Wrong2 = "Modularization", Wrong3 = "Obscuration" }
                 );
 
             builder.Entity<FillInTheBlank>()
