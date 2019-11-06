@@ -27,7 +27,7 @@ namespace JeopardyAPI.Controllers
         [HttpGet("{id}")]
         public ActionResult<MultipleChoice> Get(int id)
         {
-            return _db.MultipleChoice.FirstOrDefault(entry => entry.MultipleChoiceId == id);
+            return _db.MultipleChoice.FirstOrDefault(entry => entry.Id == id);
         }
     }
 }

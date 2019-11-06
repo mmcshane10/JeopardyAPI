@@ -27,7 +27,7 @@ namespace JeopardyAPI.Controllers
         [HttpGet("{id}")]
         public ActionResult<FillInTheBlank> Get(int id)
         {
-            return _db.FillInTheBlank.FirstOrDefault(entry => entry.FillInTheBlankId == id);
+            return _db.FillInTheBlank.FirstOrDefault(entry => entry.Id == id);
         }
     }
 }
