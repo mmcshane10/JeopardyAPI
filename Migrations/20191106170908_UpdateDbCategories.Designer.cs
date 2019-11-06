@@ -2,14 +2,16 @@
 using JeopardyAPI.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace JeopardyAPI.Migrations
 {
     [DbContext(typeof(JeopardyAPIContext))]
-    partial class JeopardyAPIContextModelSnapshot : ModelSnapshot
+    [Migration("20191106170908_UpdateDbCategories")]
+    partial class UpdateDbCategories
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
