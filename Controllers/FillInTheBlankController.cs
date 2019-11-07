@@ -2,6 +2,7 @@
 using System.Linq;
 using Microsoft.AspNetCore.Mvc;
 using JeopardyAPI.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace JeopardyAPI.Controllers
 {
@@ -28,6 +29,21 @@ namespace JeopardyAPI.Controllers
         public ActionResult<FillInTheBlank> Get(int id)
         {
             return _db.FillInTheBlank.FirstOrDefault(entry => entry.Id == id);
+        }
+
+        //POST api/fillintheblank
+        [HttpPost]
+        public void Post([FromBody] FillInTheBlank newQuestion)
+        {
+            _db.FillInTheBlank.Add(newQuestion);
+            _db.SaveChanges();
+        }
+
+        [HttpPut]
+        public void Put([FromBody] FillInTheBlank newQuestion)
+        {
+            _db.Entry(newQuestion).State = EntityState.Modified;
+            _db.SaveChanges();
         }
     }
 }
